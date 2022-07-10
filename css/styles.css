@@ -755,7 +755,7 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: 528px;
+    width: 528px;
     min-height: 581px;
 
     background-color: var(--primary-bg-color);
@@ -786,7 +786,15 @@ ul {
 
 .close-btn {
     fill: var(--header-logo-color);
+
+    transition: fill var(--anim);
 }
+
+.close-btn:hover,
+.close-btn:focus {
+    fill: var(--accent-color);
+}
+
 
 .modal-form-area {
     display: block;
@@ -913,6 +921,6 @@ textarea {
 }
 
 .btn-checkbox {
-    margin-right: 164px;
-    margin-left: 164px;
+    margin-right: 124px;
+    margin-left: 124px;
 }
