@@ -40,7 +40,6 @@ ul {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    outline: 2px solid red;
 }
 
 .section {
@@ -680,6 +679,8 @@ ul {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    transition: outline var(--anim), border-color var(--anim);
 }
 
 .form-field:focus {
@@ -754,8 +755,8 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    min-height: 581px;
 
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -832,6 +833,8 @@ ul {
     color: var(--title-text-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    transition: outline var(--anim), border-color var(--anim);
 }
 
 .modal-form-field-comment {
@@ -842,6 +845,8 @@ ul {
     background-color: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    transition: outline var(--anim), border-color var(--anim);
 }
 
 textarea {
@@ -908,5 +913,6 @@ textarea {
 }
 
 .btn-checkbox {
-    margin: 0 auto;
+    margin-right: 164px;
+    margin-left: 164px;
 }
