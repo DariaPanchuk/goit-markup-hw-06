@@ -790,8 +790,8 @@ ul {
     transition: fill var(--anim);
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.modal-btn:hover .close-btn,
+.modal-btn:focus .close-btn {
     fill: var(--accent-color);
 }
 
